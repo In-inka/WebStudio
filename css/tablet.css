@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) {
+  .conteiner {
+    max-width: 766px;
+  }
+
+  /*----------------features----------------*/
+  .features-item {
+    width: calc((100%-24px) / 2);
+    max-width: 356px;
+  }
+  /*----------------cards----------------*/
+  .cards {
+    padding-bottom: 104px;
+  }
+
+  .cards-list {
+    gap: 11px;
+    row-gap: 68px;
+  }
+  .cards-list > li {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  /*----------------customer----------------*/
+  .customers-list {
+    gap: 24px;
+    row-gap: 72px;
+  }
+  .customers-link {
+    padding: 16px 32px;
+  }
+  .customers-item {
+    width: 168px;
+  }
+  /*----------------footer----------------*/
+  .footer-flex {
+    max-width: 582px;
+    justify-content: start;
+    text-align: left;
+    gap: 24px;
+  }
+  .footer-form-sub {
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+  .footer-input-email {
+    width: 264px;
+    margin-right: 24px;
+  }
+}
