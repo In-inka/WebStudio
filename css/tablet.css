@@ -90,6 +90,16 @@
   /*----------------hero----------------*/
   .hero {
     padding-bottom: 108px;
+
+    background-image: var(--gra), url(../images/bg/hero-bg-dec.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--gra), url(../images/bg/2x/hero-bg-dec-2x.jpg);
+    }
   }
 
   .hero-title {
@@ -145,7 +155,7 @@
   }
 
   .modal {
+    width: 100%;
     max-width: 408px;
-    max-width: 586px;
   }
 }
