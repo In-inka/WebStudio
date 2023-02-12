@@ -2,6 +2,40 @@
   .conteiner {
     max-width: 1158px;
   }
+
+  /*----------------hero----------------*/
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+    background-image: var(--gra), url(../images/bg/hero-bg-dec.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--gra), url(../images/bg/2x/hero-bg-dec-2x.jpg);
+    }
+  }
+  .logo {
+    margin-right: 76px;
+  }
+
+  .header-contact {
+    flex-direction: row;
+    gap: 40px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .header-list .link {
+    padding-bottom: 24px;
+  }
+  .header-contact .link {
+    padding-bottom: 24px;
+  }
+
   /*----------------features----------------*/
   .features {
     padding-top: 120px;
