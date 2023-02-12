@@ -143,4 +143,9 @@
     width: 264px;
     margin-right: 24px;
   }
+
+  .modal {
+    max-width: 408px;
+    max-width: 586px;
+  }
 }
