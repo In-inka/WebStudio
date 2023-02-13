@@ -273,7 +273,7 @@ img {
 
   text-transform: capitalize;
 
-  color: var(--primary-brend-color);
+  color: var(--text-color);
 
   transition: color var(--duration) var(--cubic-bezier);
 }
