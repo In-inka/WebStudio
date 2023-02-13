@@ -94,6 +94,8 @@
 
   /*----------------hero----------------*/
   .hero {
+    max-width: 1440px;
+
     padding-bottom: 108px;
 
     background-image: var(--gra), url(../images/bg/hero-bg-dec.jpg);
@@ -162,5 +164,7 @@
   .modal {
     width: 408px;
     height: 576px;
+
+    overflow-y: inherit;
   }
 }

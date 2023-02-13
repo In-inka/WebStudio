@@ -168,7 +168,6 @@ img {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   overflow-y: auto;
 }
 
@@ -279,6 +278,8 @@ img {
 }
 
 .mob-mail-link {
+  display: block;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -419,8 +420,10 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
+
+  text-align: center;
+
   text-transform: capitalize;
   color: #2e2f42;
   color: var(--dark-color);
@@ -835,8 +838,9 @@ img {
   padding: 24px;
   padding-top: 72px;
   width: 100%;
+  height: 100vh;
   max-width: 392px;
-  min-height: 586px;
+  max-height: 586px;
 
   overflow-y: scroll;
 
@@ -849,6 +853,7 @@ img {
 
   transition: transform var(--duration) var(--cubic-bezier);
 }
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1);
 }

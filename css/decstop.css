@@ -5,6 +5,8 @@
 
   /*----------------hero----------------*/
   .hero {
+    max-width: 1440px;
+
     padding-top: 188px;
     padding-bottom: 188px;
   }
@@ -42,6 +44,9 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+
+    text-align: left;
+
     letter-spacing: 0.02em;
     margin-bottom: 8px;
   }
