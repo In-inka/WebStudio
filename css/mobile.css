@@ -1,0 +1,15 @@
+@media screen and (min-width: 480px) {
+  .conteiner {
+    max-width: 426px;
+  }
+  .hero {
+    background-image: var(--gra), url(../images/bg/hero-bg-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--gra), url(../images/bg/2x/hero-bg-tab-2x.jpg);
+    }
+  }
+}

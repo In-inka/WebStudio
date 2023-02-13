@@ -4,6 +4,10 @@
   }
 
   /*----------------header----------------*/
+
+  .mob-menu-open {
+    display: none;
+  }
   .header-flex {
     display: flex;
   }
@@ -87,6 +91,7 @@
     border-radius: 2px;
     background-color: var(--hover-color);
   }
+
   /*----------------hero----------------*/
   .hero {
     padding-bottom: 108px;

@@ -120,16 +120,9 @@ img {
 }
 
 /*-----------header--------------*/
-/*.header-flex {
-  display: flex;
-}*/
 .header {
   border-bottom: 1px solid var(--accent-color);
 }
-/*.header-nav {
-  display: flex;
-  margin-right: auto;
-}*/
 .header-list {
   display: none;
 }
@@ -153,6 +146,195 @@ img {
 }
 .header-contact {
   display: none;
+}
+
+/*---------------menu------------*/
+
+.header-flex {
+  display: flex;
+}
+
+.mob-menu-open {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.mob-menu > .conteiner {
+  max-width: 378px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.container.mob-container {
+  max-width: 378px;
+}
+.mob-menu-open-icons {
+  width: 32px;
+  height: 22px;
+
+  stroke: var(--dark-color);
+}
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  z-index: 1000;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--white-color);
+
+  transform: translateX(0);
+
+  transition: transform var(--duration) var(--cubic-bezier);
+}
+
+.mob-menu.is-hidden {
+  transform: translateX(100%);
+}
+.menu-close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 24px;
+
+  color: #000000;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: background-color var(--duration) var(--cubic-bezier);
+}
+.mob-menu-close-icons {
+  width: 8px;
+  height: 8px;
+
+  fill: currentColor;
+  transition: fill var(--duration) var(--cubic-bezier);
+}
+
+.menu-close:is(:hover, :focus) {
+  background-color: var(--hover-color);
+}
+.menu-close:is(:hover, :focus) .mob-menu-close-icons {
+  fill: var(--white-color);
+}
+.mob-menu-list {
+  margin-bottom: 284px;
+}
+.mob-menu-nav {
+}
+
+.mob-item-menu:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+
+  color: var(--dark-color);
+
+  transition: color var(--duration) var(--cubic-bezier);
+}
+.mob-menu-link:hover,
+.mob-menu-link.link:focus {
+  color: var(--primary-brend-color);
+}
+.mob-menu-link:active {
+  color: var(--text-color);
+}
+
+.mob-tel-link {
+  display: block;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.11;
+
+  margin-bottom: 40px;
+
+  text-transform: capitalize;
+
+  color: var(--primary-brend-color);
+
+  transition: color var(--duration) var(--cubic-bezier);
+}
+
+.mob-mail-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  margin-bottom: 48px;
+
+  color: var(--text-color);
+
+  transition: color var(--duration) var(--cubic-bezier);
+}
+
+.mob-item-contact .link:hover,
+.mob-item-contact .link:focus {
+  color: var(--primary-brend-color);
+}
+.mob-item-contact .link:active {
+  color: var(--text-color);
+}
+.mob-menu.is-open {
+  transform: translateX(0);
+}
+.mob-soc-list {
+  display: flex;
+  gap: 56px;
+}
+.mob-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.mob-soc-link {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background-color: var(--primary-brend-color);
+
+  transition: background-color var(--duration) var(--cubic-bezier);
+}
+.mob-soc-link:hover,
+.mob-soc-link:focus {
+  background-color: var(--hover-color);
+}
+
+.mob-soc-link {
+}
+.mob-soc-icons {
+  width: 24px;
+  height: 24px;
+
+  fill: var(--light-color);
 }
 /*------------------hero-------------*/
 .hero-conteiner {
@@ -640,7 +822,7 @@ img {
   transition: opacity var(--duration) var(--cubic-bezier),
     visibility var(--duration) var(--cubic-bezier);
 }
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -654,7 +836,7 @@ img {
   padding-top: 72px;
   width: 100%;
   max-width: 392px;
-  height: 586px;
+  min-height: 586px;
 
   overflow-y: scroll;
 
@@ -857,21 +1039,5 @@ img {
   }
   .pic {
     display: none;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .conteiner {
-    max-width: 426px;
-  }
-  .hero {
-    background-image: var(--gra), url(../images/bg/hero-bg-tab.jpg);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: var(--gra), url(../images/bg/2x/hero-bg-tab-2x.jpg);
-    }
   }
 }

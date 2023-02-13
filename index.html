@@ -24,6 +24,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/decstop.css" />
   </head>
@@ -52,6 +53,79 @@
             >
           </li>
         </ul>
+        <button type="button" class="mob-menu-open btn" data-menu-open>
+          <svg class="mob-menu-open-icons">
+            <use href="./images/icons.svg#icon-mobile-open-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="conteiner mob-conteiner">
+          <button type="button" class="menu-close btn" data-menu-close>
+            <svg class="mob-menu-close-icons">
+              <use href="./images/icons.svg#icon-mob-close"></use>
+            </svg>
+          </button>
+          <nav class="mob-menu-nav">
+            <ul class="mob-menu-list list text">
+              <li class="mob-item-menu">
+                <a href="./index.html" class="mob-menu-link link current"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-item-menu">
+                <a href="./portfolio.html" class="mob-menu-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-item-menu">
+                <a href="" class="mob-menu-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mob-contact list">
+            <li class="mob-item-contact">
+              <a href="tel:+110001111111" class="mob-tel-link link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-item-contact">
+              <a href="mailto:info@devstudio.com" class="mob-mail-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icons" widht="24px" height="24px">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icons" widht="24px" height="24px">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icons" widht="24px" height="24px">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icons" widht="24px" height="24px">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -538,6 +612,7 @@
         </form>
       </div>
     </div>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
