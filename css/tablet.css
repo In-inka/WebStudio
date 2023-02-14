@@ -163,7 +163,7 @@
 
   .modal {
     width: 408px;
-    height: 576px;
+    max-height: 576px;
 
     overflow-y: scroll;
   }
