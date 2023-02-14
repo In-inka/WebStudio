@@ -165,6 +165,6 @@
     width: 408px;
     height: 576px;
 
-    overflow-y: inherit;
+    overflow-y: scroll;
   }
 }
