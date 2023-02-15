@@ -97,6 +97,7 @@
     margin-right: 80px;
   }
   .modal {
+    max-height: 576px;
     overflow: hidden;
   }
 }
