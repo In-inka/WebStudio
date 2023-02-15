@@ -96,4 +96,7 @@
   .footer-soc {
     margin-right: 80px;
   }
+  .modal {
+    overflow: hidden;
+  }
 }
