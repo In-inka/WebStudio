@@ -305,7 +305,6 @@ img {
 }
 .mob-soc-list {
   display: flex;
-  gap: 56px;
 }
 .mob-soc-item {
   width: 40px;
@@ -324,6 +323,11 @@ img {
 
   transition: background-color var(--duration) var(--cubic-bezier);
 }
+
+.mob-soc-item:not(:last-child) {
+  margin-right: auto;
+}
+
 .mob-soc-link:hover,
 .mob-soc-link:focus {
   background-color: var(--hover-color);
