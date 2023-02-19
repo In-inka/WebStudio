@@ -769,6 +769,7 @@ img {
   border-color: transparent;
 }
 .main-item-link {
+  color: currentColor;
   flex-basis: calc((100% - 48px) / 3);
 }
 .main-subtitle {
