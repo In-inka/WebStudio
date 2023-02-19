@@ -119,6 +119,12 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.is-open,
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
 /*-----------header--------------*/
 .header {
@@ -201,7 +207,7 @@ img {
   transition: transform var(--duration) var(--cubic-bezier);
 }
 
-.mob-menu.is-hidden {
+.mob-menu.is-open {
   transform: translateX(100%);
 }
 .menu-close {
@@ -794,11 +800,7 @@ img {
   transition: opacity var(--duration) var(--cubic-bezier),
     visibility var(--duration) var(--cubic-bezier);
 }
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+
 .modal {
   position: absolute;
   top: 50%;
