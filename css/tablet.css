@@ -164,4 +164,24 @@
   .modal {
     width: 408px;
   }
+
+  /*---------------------Portfolio---------------------*/
+  .main {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .main-menu {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+  .main-list {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .main-picture {
+    width: 356px;
+    height: 300px;
+  }
 }

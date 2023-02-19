@@ -1,4 +1,5 @@
 :root {
+  /*color-scheme: light dark;*/
   --text-color: #434455;
   --dark-color: #2e2f42;
   --accent-color: #e7e9fc;
@@ -20,6 +21,7 @@
   --modal-policy-color: #757575;
   --footer-pl: rgba(255, 255, 255, 0.6);
 }
+
 html {
   box-sizing: border-box;
 }
@@ -723,25 +725,36 @@ img {
 
 /*----------------PORTFOLIO-------------*/
 .main {
-  padding-top: 96px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.menu-main-link {
+  color: currentColor;
 }
 .main-list {
   display: flex;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
-  gap: 24px;
   row-gap: 48px;
 }
 .main-menu {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
   gap: 24px;
-  margin-bottom: 72px;
+  row-gap: 16px;
+  margin-bottom: 48px;
 }
 
 .main-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.04em;
+
   padding: 8px 16px;
   text-align: center;
 
@@ -787,33 +800,10 @@ img {
 }
 .main-text {
 }
-.main-block-overlay {
-  position: relative;
-  overflow: hidden;
-}
-.main-overlay {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
 
-  width: 100%;
-  height: 100%;
-  padding: 40px 32px;
-  overflow: auto;
-
-  color: var(--light-color);
-
-  background-color: var(--primary-brend-color);
-
-  transform: translateY(100%);
-
-  transition: transform var(--duration) var(--cubic-bezier);
-}
-.main-item-link:hover .main-overlay,
-.main-item-link:focus .main-overlay {
-  opacity: 1;
-  transform: translateY(0);
+.main-picture {
+  width: 396px;
+  height: 280px;
 }
 /*----------------MODAL-------------*/
 .backdrop {
@@ -1048,5 +1038,14 @@ img {
   }
   .pic {
     display: none;
+  }
+  .main-overlay {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-menu {
+    max-width: 293px;
   }
 }
