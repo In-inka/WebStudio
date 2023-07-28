@@ -66,7 +66,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.conteiner {
+.container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -170,7 +170,7 @@ img {
   justify-content: center;
 }
 
-.mob-menu > .conteiner {
+.mob-menu > .container {
   max-width: 378px;
   height: 100%;
   display: flex;
@@ -707,6 +707,9 @@ img {
 }
 
 /*----------------PORTFOLIO-------------*/
+.container-portfolio {
+  min-height: 700px;
+}
 .main {
   padding-top: 48px;
   padding-bottom: 48px;
